@@ -44,5 +44,19 @@ write your code here
         font-style: italic;
         font-size: 1.1em;
     }
+}
 
+.tm-nav-item-link:hover {
+    background-color: lightskyblue;
+    color: #fff;
+}
+
+.tm-banner {
+    padding: 0;
+    border: 30px solid;
+    border-image-source: linear-gradient(90deg, lightskyblue, burlywood);
+    border-image-slice: 1;
+}
+.tm-banner-text {
+    text-shadow: 3px 3px 3px #333;
 }
