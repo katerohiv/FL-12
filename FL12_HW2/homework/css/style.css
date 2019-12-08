@@ -57,28 +57,34 @@ write your code here
     border-image-source: linear-gradient(90deg, lightskyblue, burlywood);
     border-image-slice: 1;
 }
+
 .tm-banner-text {
     text-shadow: 3px 3px 3px #333;
     animation-duration: 4s;
     animation-name: slidein;
 }
+
 @keyframes slidein {
     from {
         margin-left: 200px;
     }
 }
+
 .flex-2-col {
     display: flex;
     justify-content: space-between;
 }
+
 .tm-team-description-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
+
 .tm-team-description-container h2 {
     text-align: center;
 }
+
 .tm-team-description-container p {
     text-indent: 25px;
 }
@@ -86,4 +92,27 @@ write your code here
 .box-bg:hover {
     background-color: lightgrey;
     color: lightskyblue;
+}
+
+.heading h2 {
+    text-align: center;
+    color: lightskyblue;
+}
+
+.text::after {
+    content: "New";
+    color: red;
+    vertical-align: top;
+    font-size: 11px;
+    position: absolute;
+}
+
+.heading a:hover::before {
+    content: ">";
+    color: black;
+    font-weight: bold;
+}
+
+ol li {
+    list-style: lower-alpha;
 }
