@@ -113,10 +113,10 @@ write your code here
     font-weight: bold;
 }
 
-ol li {
+.heading li {
     list-style: lower-alpha;
 }
-.blocks p:last-child {
+.blocks .tm-section-description:last-child {
     letter-spacing: 5px;
     word-spacing: 10px;
     font-style: italic;
@@ -124,3 +124,20 @@ ol li {
 .blocks h2 {
     text-align: left;
 }
+.box-work:nth-child(odd) {
+    background: lightskyblue;
+    color: white;
+    border: 10px solid lightskyblue;
+}
+.box-work:nth-child(even) {
+    background: white;
+    color: black;
+    border: 10px solid white;
+}
+.box-work p::first-letter {
+    font-weight:bold;
+}
+.box-work p {
+    font-style: italic;
+}
+
