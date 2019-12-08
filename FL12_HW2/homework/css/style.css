@@ -116,3 +116,11 @@ write your code here
 ol li {
     list-style: lower-alpha;
 }
+.blocks p:last-child {
+    letter-spacing: 5px;
+    word-spacing: 10px;
+    font-style: italic;
+}
+.blocks h2 {
+    text-align: left;
+}
