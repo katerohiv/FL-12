@@ -3,3 +3,46 @@
 write your code here
 
 */
+@media print {
+    .carousel-indicators, .img-contact-us, #contact, .tm-sidebar, .tm-team-img, .gallery-container {
+        display: none;
+    }
+
+    .padding-medium, .tm-main-content, .tm-content-box, .tm-banner, .tm-team-description-container, .heading {
+        padding: 0 10px;
+        margin: 0;
+    }
+
+    .tm-team-description-container, .heading {
+        text-align: center;
+        margin: 10px auto;
+        max-width: 100%;
+    }
+
+    h2 {
+        font-weight: 100;
+        color: lightskyblue;
+        padding: 10px 0;
+        margin: 0;
+    }
+
+    ol {
+        margin: 0 160px 0 110px;
+        list-style: none;
+    }
+
+    ol li {
+        text-align: left;
+    }
+
+    ol li:nth-child(odd) {
+        text-align: right;
+    }
+
+    .blocks p:last-child {
+        letter-spacing: 10px;
+        font-style: italic;
+        font-size: 1.1em;
+    }
+
+}
