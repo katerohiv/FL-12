@@ -1,0 +1,14 @@
+$fontStyle: 'Source Sans Pro', sans-serif;
+$headerBackground: url("../img/m-h-day.jpg");
+$colorButton: #699900;
+$cardBackground: #21232E;
+
+@mixin backgroundStyle {
+  background-image: $headerBackground;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+
