@@ -1,13 +1,36 @@
-$fontStyle: 'Source Sans Pro', sans-serif;
+$fontStyleHeader: 'Source Sans Pro', sans-serif;
+$fontStyleMain: 'Hind', sans-serif;
+$fontStyleFooter: 'Fresca', sans-serif;
+
 $headerBackground: url("../img/m-h-day.jpg");
-$colorButton: #699900;
+$buttonBackground: #699900;
 $cardBackground: #21232E;
+$colorMark: #14a0c7;
+$mainTextColor: #2c2f3c;
+$secondTextColor: #ffffff;
+$cardTextColor: #b6c0ce;
+
+$firstGradientColor: #699900;
+$secondGradientColor: #2b59dd;
+
+
 
 @mixin backgroundStyle {
   background-image: $headerBackground;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  border-radius: 0 0 40% 0;
+}
+
+@mixin buttonStyle {
+  border-radius: 5px;
+  background-color: $buttonBackground;
+  border: 1px solid $buttonBackground;
+  color: $secondTextColor;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 15px 40px;
 }
 
 
