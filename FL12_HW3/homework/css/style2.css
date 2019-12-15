@@ -1,9 +1,9 @@
+body {
+  background-color: #21232e; }
+
 * {
   margin: 0;
   padding: 0; }
-
-body {
-  background: #21232e; }
 
 .header {
   font-family: "Source Sans Pro", sans-serif;

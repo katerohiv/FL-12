@@ -20,11 +20,21 @@ $sectionHeaderTextColor: #2c2f3c;
 $sectionCardHeadingTextColor: #ffffff;
 $cardTextColor: #b6c0ce;
 $bannerTextColor: #b6c0ce;
-$bodyBackgroundColor:#ffffff;
+
 $markColor: #14a0c7;
 
 $firstGradientColor: #699900;
 $secondGradientColor: #2b59dd;
+
+$page-colours: (
+  white: #ffffff
+);
+
+@each $page-colour, $colour in $page-colours {
+  body {
+    background-color: $colour;
+  }
+}
 
 @mixin backgroundStyle {
   background-image: $headerBackground;
