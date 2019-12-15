@@ -1,0 +1,36 @@
+$fontStyleHeader: 'Source Sans Pro', sans-serif;
+$fontStyleMain: 'Hind', sans-serif;
+$fontStyleSectionCardText: 'Fresca', sans-serif;
+
+$headerBackground: url("../img/m-h-night.jpg");
+$buttonBackground: #e3ac00;
+$cardBackground: #3b3f50;
+$colorMark: #14a0c7;
+$mainTextColor: #ffffff;
+$secondTextColor: #f0f3f7;
+$cardTextColor: #d1d1d1;
+$bodyBackgroundColor:#21232e;
+
+$firstGradientColor: #da9f08;
+$secondGradientColor: #932e51;
+
+
+
+@mixin backgroundStyle {
+  background-image: $headerBackground;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 0 0 40% 0;
+}
+
+@mixin buttonStyle {
+  border-radius: 5px;
+  background-color: $buttonBackground;
+  border: 1px solid $buttonBackground;
+  color: $secondTextColor;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 15px 40px;
+}
+
