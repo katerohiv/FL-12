@@ -22,6 +22,8 @@ body {
     .header .header-wrap .landing-logo {
       margin: 20px 0;
       display: flex; }
+      .header .header-wrap .landing-logo img {
+        margin: auto 0; }
       .header .header-wrap .landing-logo p {
         font-family: "Fresca", sans-serif;
         margin: 0 20px;
@@ -31,13 +33,16 @@ body {
         font-weight: bold; }
         .header .header-wrap .landing-logo p span {
           font-family: "Fresca", sans-serif;
-          font-size: 12px; }
+          font-size: 12px;
+          text-align: center; }
     .header .header-wrap .header_heading {
       margin: 50px 0;
       font-size: 4em;
       font-weight: bold;
       width: 30%;
       line-height: 1.1em; }
+    .header .header-wrap .header_heading::selection {
+      background: #ff4e33; }
     .header .header-wrap .header_text {
       font-family: "Fresca", sans-serif;
       margin: 10px 0;
@@ -45,15 +50,16 @@ body {
     .header .header-wrap div {
       margin: 60px 0; }
       .header .header-wrap div button {
+        margin: auto 0;
         border-radius: 5px;
         background-color: #e3ac00;
         border: 1px solid #e3ac00;
-        color: #f0f3f7;
+        color: #eef0ef;
         font-size: 16px;
         font-weight: bold;
         padding: 15px 40px; }
       .header .header-wrap div a {
-        color: #f0f3f7;
+        color: #ffffff;
         margin-left: 150px;
         font-size: 20px; }
 
@@ -68,6 +74,8 @@ body {
     margin: 40px 0;
     color: #f0f3f7;
     font-family: "Hind", sans-serif; }
+  .section .section_text::selection {
+    background: #ff4e33; }
   .section .section_card_wrap {
     margin: 0 auto 100px auto;
     width: 90%; }
@@ -88,7 +96,7 @@ body {
         justify-content: center;
         padding: 0 100px; }
         .section .section_card_wrap .section_card .section_card_right_container .section_card_heading {
-          color: #f0f3f7;
+          color: #ffffff;
           font-size: 24px;
           font-family: "Hind", sans-serif;
           font-weight: bold; }
@@ -99,6 +107,7 @@ body {
           margin: 30px 0;
           line-height: 32px; }
         .section .section_card_wrap .section_card .section_card_right_container .section_link {
+          font-family: "Fresca", sans-serif;
           color: #d1d1d1; }
   .section .section_banner {
     padding: 20px 200px;
@@ -112,19 +121,23 @@ body {
     .section .section_banner .section_banner_text_wrap {
       text-align: left; }
       .section .section_banner .section_banner_text_wrap .section_banner_heading {
+        font-family: "Hind", sans-serif;
         font-size: 1.8em;
         color: #ffffff;
         font-weight: bold; }
+      .section .section_banner .section_banner_text_wrap .section_banner_heading::selection {
+        background: #ff4e33; }
       .section .section_banner .section_banner_text_wrap .section_banner_text {
         margin-top: 20px;
         font-family: "Fresca", sans-serif;
         color: #d1d1d1;
         font-size: 0.8em; }
     .section .section_banner .section_banner_button {
+      margin: auto 0;
       border-radius: 5px;
       background-color: #e3ac00;
       border: 1px solid #e3ac00;
-      color: #f0f3f7;
+      color: #eef0ef;
       font-size: 16px;
       font-weight: bold;
       padding: 15px 40px; }
@@ -139,6 +152,8 @@ body {
     .footer .footer-wrap .footer_logo {
       margin: auto;
       display: flex; }
+      .footer .footer-wrap .footer_logo img {
+        margin: auto; }
       .footer .footer-wrap .footer_logo p {
         font-family: "Fresca", sans-serif;
         font-size: 20px;
