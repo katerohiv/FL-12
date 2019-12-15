@@ -18,16 +18,20 @@ body {
     .landing-logo {
       margin: 20px 0;
       display: flex;
+      img {
+        margin: auto 0;
+      }
       p {
-        font-family: $fontStyleSectionCardText;
+        font-family: $fontStyleLogo;
         margin: 0 20px;
         display: flex;
         flex-direction: column;
         font-size: 22px;
         font-weight: bold;
         span {
-          font-family: $fontStyleSectionCardText;
+          font-family: $fontStyleLogo;
           font-size: 12px;
+          text-align: center;
         }
       }
     }
@@ -38,8 +42,11 @@ body {
       width: 30%;
       line-height: 1.1em;
     }
+    .header_heading::selection {
+      background: $markColor;
+    }
     .header_text {
-      font-family: $fontStyleSectionCardText;
+      font-family: $fontStyleHeaderText;
       margin: 10px 0;
       width: 35%;
     }
@@ -49,7 +56,7 @@ body {
         @include buttonStyle;
       }
       a {
-        color: $secondTextColor;
+        color: $colorTextLink;
         margin-left: 150px;
         font-size: 20px;
       }
@@ -66,8 +73,11 @@ body {
     font-size: 2.6em;
     font-weight: bold;
     margin: 40px 0;
-    color:$secondTextColor;
-    font-family: $fontStyleMain;
+    color: $sectionHeaderTextColor;
+    font-family: $fontStyleSectionText;
+  }
+  .section_text::selection {
+    background: $markColor;
   }
   .section_card_wrap {
     margin: 0 auto 100px auto;
@@ -90,9 +100,9 @@ body {
         justify-content: center;
         padding: 0 100px;
         .section_card_heading {
-          color: $secondTextColor;
+          color: $sectionCardHeadingTextColor;
           font-size: 24px;
-          font-family: $fontStyleMain;
+          font-family: $fontStyleSectionText;
           font-weight: bold;
         }
         .section_card_text {
@@ -103,6 +113,7 @@ body {
           line-height: 32px;
         }
         .section_link {
+          font-family: $fontStyleSectionLink;
           color: $cardTextColor;
         }
       }
@@ -120,14 +131,18 @@ body {
     .section_banner_text_wrap {
       text-align: left;
       .section_banner_heading {
+        font-family: $fontStyleBannerHeaderText;
         font-size: 1.8em;
         color: $mainTextColor;
         font-weight: bold;
       }
+      .section_banner_heading::selection {
+        background: $markColor;
+      }
       .section_banner_text {
         margin-top: 20px;
-        font-family: $fontStyleSectionCardText;
-        color: $cardTextColor;
+        font-family: $fontStyleBannerText;
+        color: $bannerTextColor;
         font-size: 0.8em;
       }
     }
@@ -147,15 +162,18 @@ body {
     .footer_logo {
       margin: auto;
       display: flex;
+      img {
+        margin: auto;
+      }
       p {
-        font-family: $fontStyleSectionCardText;
+        font-family: $fontStyleFooter;
         font-size: 20px;
         display: flex;
         flex-direction: column;
         margin: auto 10px;
         font-weight: bold;
         span {
-          font-family: $fontStyleSectionCardText;
+          font-family: $fontStyleFooter;
           font-size: small;
           font-weight: 100;
           text-align: center;
@@ -163,13 +181,13 @@ body {
       }
     }
     .footer_text {
-      font-family: $fontStyleSectionCardText;
+      font-family: $fontStyleFooter;
       margin: auto;
       width: 15%;
       font-size: small;
     }
     .footer-cr {
-      font-family: $fontStyleSectionCardText;
+      font-family: $fontStyleFooter;
       margin: auto;
       font-size: small;
     }
