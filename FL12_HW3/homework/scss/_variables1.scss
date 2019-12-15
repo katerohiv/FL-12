@@ -1,20 +1,30 @@
 $fontStyleHeader: 'Source Sans Pro', sans-serif;
 $fontStyleMain: 'Hind', sans-serif;
-$fontStyleSectionCardText: 'Fresca', sans-serif;
+$fontStyleSectionCardText: 'Hind', sans-serif;
+$fontStyleLogo: 'Hind', sans-serif;
+$fontStyleHeaderText: 'Hind', sans-serif;
+$fontStyleSectionText: 'Hind', sans-serif;
+$fontStyleSectionLink: 'Hind', sans-serif;
+$fontStyleBannerHeaderText: 'Hind', sans-serif;
+$fontStyleBannerText: 'Hind', sans-serif;
+$fontStyleFooter: 'Hind', sans-serif;
 
 $headerBackground: url("../img/m-h-day.jpg");
 $buttonBackground: #699900;
+$buttonTextColor:#eef0ef;
+$colorTextLink:#ffffff;
 $cardBackground: #21232E;
 $colorMark: #14a0c7;
 $mainTextColor: #2c2f3c;
-$secondTextColor: #ffffff;
+$sectionHeaderTextColor: #2c2f3c;
+$sectionCardHeadingTextColor: #ffffff;
 $cardTextColor: #b6c0ce;
+$bannerTextColor: #b6c0ce;
 $bodyBackgroundColor:#ffffff;
+$markColor: #14a0c7;
 
 $firstGradientColor: #699900;
 $secondGradientColor: #2b59dd;
-
-
 
 @mixin backgroundStyle {
   background-image: $headerBackground;
@@ -25,14 +35,20 @@ $secondGradientColor: #2b59dd;
 }
 
 @mixin buttonStyle {
+  margin: auto 0;
   border-radius: 5px;
   background-color: $buttonBackground;
   border: 1px solid $buttonBackground;
-  color: $secondTextColor;
+  color: $buttonTextColor;
   font-size: 16px;
   font-weight: bold;
   padding: 15px 40px;
 }
 
+@mixin linkStyleHeader {
+  color: $colorTextLink;
+}
 
-
+@mixin linkStyleCard {
+  color: $cardTextColor;
+}

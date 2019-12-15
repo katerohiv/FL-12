@@ -1,20 +1,30 @@
 $fontStyleHeader: 'Source Sans Pro', sans-serif;
 $fontStyleMain: 'Hind', sans-serif;
 $fontStyleSectionCardText: 'Fresca', sans-serif;
+$fontStyleLogo: 'Fresca', sans-serif;
+$fontStyleHeaderText: 'Fresca', sans-serif;
+$fontStyleSectionText: 'Hind', sans-serif;
+$fontStyleSectionLink: 'Fresca', sans-serif;
+$fontStyleBannerHeaderText: 'Hind', sans-serif;
+$fontStyleBannerText: 'Fresca', sans-serif;
+$fontStyleFooter: 'Fresca', sans-serif;
 
 $headerBackground: url("../img/m-h-night.jpg");
 $buttonBackground: #e3ac00;
+$buttonTextColor:#eef0ef;
+$colorTextLink:#ffffff;
 $cardBackground: #3b3f50;
 $colorMark: #14a0c7;
 $mainTextColor: #ffffff;
-$secondTextColor: #f0f3f7;
+$sectionHeaderTextColor: #f0f3f7;
+$sectionCardHeadingTextColor: #ffffff;
 $cardTextColor: #d1d1d1;
+$bannerTextColor: #d1d1d1;
 $bodyBackgroundColor:#21232e;
+$markColor: #ff4e33;
 
 $firstGradientColor: #da9f08;
 $secondGradientColor: #932e51;
-
-
 
 @mixin backgroundStyle {
   background-image: $headerBackground;
@@ -25,12 +35,20 @@ $secondGradientColor: #932e51;
 }
 
 @mixin buttonStyle {
+  margin: auto 0;
   border-radius: 5px;
   background-color: $buttonBackground;
   border: 1px solid $buttonBackground;
-  color: $secondTextColor;
+  color: $buttonTextColor;
   font-size: 16px;
   font-weight: bold;
   padding: 15px 40px;
 }
 
+@mixin linkStyleHeader {
+  color: $colorTextLink;
+}
+
+@mixin linkStyleCard {
+  color: $cardTextColor;
+}
