@@ -2,7 +2,9 @@
   margin: 0;
   padding: 0;
 }
-
+body {
+  background: $bodyBackgroundColor;
+}
 .header {
   font-family: $fontStyleHeader;
   color: $mainTextColor;
@@ -17,12 +19,14 @@
       margin: 20px 0;
       display: flex;
       p {
+        font-family: $fontStyleSectionCardText;
         margin: 0 20px;
         display: flex;
         flex-direction: column;
         font-size: 22px;
         font-weight: bold;
         span {
+          font-family: $fontStyleSectionCardText;
           font-size: 12px;
         }
       }
@@ -35,6 +39,7 @@
       line-height: 1.1em;
     }
     .header_text {
+      font-family: $fontStyleSectionCardText;
       margin: 10px 0;
       width: 35%;
     }
@@ -54,7 +59,6 @@
 
 .section {
   position: relative;
-  font-family: $fontStyleMain;
   width: 70%;
   margin: 0 auto;
   text-align: center;
@@ -62,6 +66,8 @@
     font-size: 2.6em;
     font-weight: bold;
     margin: 40px 0;
+    color:$secondTextColor;
+    font-family: $fontStyleMain;
   }
   .section_card_wrap {
     margin: 0 auto 100px auto;
@@ -86,12 +92,15 @@
         .section_card_heading {
           color: $secondTextColor;
           font-size: 24px;
+          font-family: $fontStyleMain;
           font-weight: bold;
         }
         .section_card_text {
+          font-family: $fontStyleSectionCardText;
           color: $cardTextColor;
           text-align: justify;
           margin: 30px 0;
+          line-height: 32px;
         }
         .section_link {
           color: $cardTextColor;
@@ -116,11 +125,14 @@
         font-weight: bold;
       }
       .section_banner_text {
+        margin-top: 20px;
+        font-family: $fontStyleSectionCardText;
         color: $cardTextColor;
+        font-size: 0.8em;
       }
     }
     .section_banner_button {
-      @include buttonStyle;
+      @extend button;
     }
   }
 }
@@ -136,12 +148,14 @@
       margin: auto;
       display: flex;
       p {
+        font-family: $fontStyleSectionCardText;
         font-size: 20px;
         display: flex;
         flex-direction: column;
         margin: auto 10px;
         font-weight: bold;
         span {
+          font-family: $fontStyleSectionCardText;
           font-size: small;
           font-weight: 100;
           text-align: center;
@@ -149,11 +163,13 @@
       }
     }
     .footer_text {
+      font-family: $fontStyleSectionCardText;
       margin: auto;
       width: 15%;
       font-size: small;
     }
     .footer-cr {
+      font-family: $fontStyleSectionCardText;
       margin: auto;
       font-size: small;
     }
