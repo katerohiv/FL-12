@@ -132,7 +132,7 @@ body {
       }
     }
     .section_banner_button {
-      @extend button;
+      @include buttonStyle;
     }
   }
 }
