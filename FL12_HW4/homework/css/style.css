@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: #000000;
+}
+
+@media screen and (min-width: 900px) {
+
+    .header {
+        height: 100vh;
+    }
+
+    .header_title {
+        font-weight: bold;
+        letter-spacing: 5px;
+        font-size: large;
+        margin: auto;
+    }
+
+    .header-wrap {
+        height: 10vh;
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        margin: auto;
+    }
+
+    .header-list {
+        margin: auto;
+        display: flex;
+        list-style: none;
+    }
+
+    .header-item {
+        text-decoration: none;
+        margin: auto 20px;
+    }
+
+    .header-item:hover {
+        color: #bfba55;
+    }
+
+    .header_text {
+        height: 90vh;
+        background: url("../img/home-bg.jpg") no-repeat top center;
+        background-size: cover;
+        text-align: center;
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .header_text_main {
+        margin: 0 auto;
+        padding-top: 50px;
+
+        color: #ffffff;
+        font-size: 60px;
+        font-weight: bold;
+    }
+
+    .header_text_secondary {
+        margin: 30px auto;
+        font-size: 20px;
+        color: #bfba55;
+    }
+
+    .header_button {
+        margin: 20px auto;
+        border-radius: 20px;
+        border: 1px solid #ffffff;
+        background: #ffffff;
+        color: #777;
+        font-size: small;
+        padding: 15px 20px;
+        letter-spacing: 1px;
+    }
+
+    .section {
+        width: 100%
+    }
+
+    .section_wrap {
+        width: 60%;
+        margin: 100px auto;
+    }
+
+    .section_img {
+        width: 100%;
+    }
+
+    .section_header {
+        font-size: 35px;
+        font-weight: bold;
+        margin: 10px 0;
+    }
+
+    .section_info {
+        display: flex;
+        justify-content: start;
+    }
+
+    .section_info_img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+
+    .section_info_name, .section_info_date, .section_info_com {
+        margin: 12px 10px;
+        color: #777;
+    }
+
+    .section_text {
+        color: #777;
+        font-size: 18px;
+        line-height: 1.5em;
+        margin: 20px 0;
+    }
+
+    .section_button {
+        margin: 20px auto 80px auto;
+        border-radius: 30px;
+        border: 1px solid #777;
+        background: #ffffff;
+        color: #777;
+        font-size: 15px;
+        padding: 15px 20px;
+        letter-spacing: 1px;
+
+    }
+
+    hr {
+        color: #777;
+    }
+
+}
+
+
