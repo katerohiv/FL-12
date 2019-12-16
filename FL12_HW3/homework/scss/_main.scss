@@ -2,9 +2,7 @@
   margin: 0;
   padding: 0;
 }
-body {
-  background: $bodyBackgroundColor;
-}
+
 .header {
   font-family: $fontStyleHeader;
   color: $mainTextColor;
@@ -56,7 +54,7 @@ body {
         @include buttonStyle;
       }
       a {
-        color: $colorTextLink;
+        @include linkStyleHeader;
         margin-left: 150px;
         font-size: 20px;
       }
@@ -113,42 +111,43 @@ body {
           line-height: 32px;
         }
         .section_link {
+          @include linkStyleCard;
           font-family: $fontStyleSectionLink;
-          color: $cardTextColor;
         }
       }
     }
   }
-  .section_banner {
-    padding: 20px 200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    justify-items: center;
-    max-width: 100%;
-    border-radius: 5px;
-    background: linear-gradient(0.25turn, $firstGradientColor, $secondGradientColor);
-    .section_banner_text_wrap {
-      text-align: left;
-      .section_banner_heading {
-        font-family: $fontStyleBannerHeaderText;
-        font-size: 1.8em;
-        color: $mainTextColor;
-        font-weight: bold;
-      }
-      .section_banner_heading::selection {
-        background: $markColor;
-      }
-      .section_banner_text {
-        margin-top: 20px;
-        font-family: $fontStyleBannerText;
-        color: $bannerTextColor;
-        font-size: 0.8em;
-      }
+}
+
+.section_banner {
+  padding: 20px 200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+  max-width: 100%;
+  border-radius: 5px;
+  background: linear-gradient(0.25turn, $firstGradientColor, $secondGradientColor);
+  .section_banner_text_wrap {
+    text-align: left;
+    .section_banner_heading {
+      font-family: $fontStyleBannerHeaderText;
+      font-size: 1.8em;
+      color: $mainTextColor;
+      font-weight: bold;
     }
-    .section_banner_button {
-      @include buttonStyle;
+    .section_banner_heading::selection {
+      background: $markColor;
     }
+    .section_banner_text {
+      margin-top: 20px;
+      font-family: $fontStyleBannerText;
+      color: $bannerTextColor;
+      font-size: 0.8em;
+    }
+  }
+  .section_banner_button {
+    @include buttonStyle;
   }
 }
 
@@ -180,16 +179,16 @@ body {
         }
       }
     }
-    .footer_text {
-      font-family: $fontStyleFooter;
-      margin: auto;
-      width: 15%;
-      font-size: small;
-    }
     .footer-cr {
       font-family: $fontStyleFooter;
       margin: auto;
       font-size: small;
     }
+    .footer_text {
+      @extend .footer-cr;
+      width: 15%;
+      text-align: justify;
+    }
+
   }
 }

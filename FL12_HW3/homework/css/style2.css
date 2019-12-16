@@ -1,9 +1,9 @@
+body {
+  background-color: #21232e; }
+
 * {
   margin: 0;
   padding: 0; }
-
-body {
-  background: #21232e; }
 
 .header {
   font-family: "Source Sans Pro", sans-serif;
@@ -107,40 +107,41 @@ body {
           margin: 30px 0;
           line-height: 32px; }
         .section .section_card_wrap .section_card .section_card_right_container .section_link {
-          font-family: "Fresca", sans-serif;
-          color: #d1d1d1; }
-  .section .section_banner {
-    padding: 20px 200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    justify-items: center;
-    max-width: 100%;
+          color: #d1d1d1;
+          font-family: "Fresca", sans-serif; }
+
+.section_banner {
+  padding: 20px 200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+  max-width: 100%;
+  border-radius: 5px;
+  background: linear-gradient(0.25turn, #da9f08, #932e51); }
+  .section_banner .section_banner_text_wrap {
+    text-align: left; }
+    .section_banner .section_banner_text_wrap .section_banner_heading {
+      font-family: "Hind", sans-serif;
+      font-size: 1.8em;
+      color: #ffffff;
+      font-weight: bold; }
+    .section_banner .section_banner_text_wrap .section_banner_heading::selection {
+      background: #ff4e33; }
+    .section_banner .section_banner_text_wrap .section_banner_text {
+      margin-top: 20px;
+      font-family: "Fresca", sans-serif;
+      color: #d1d1d1;
+      font-size: 0.8em; }
+  .section_banner .section_banner_button {
+    margin: auto 0;
     border-radius: 5px;
-    background: linear-gradient(0.25turn, #da9f08, #932e51); }
-    .section .section_banner .section_banner_text_wrap {
-      text-align: left; }
-      .section .section_banner .section_banner_text_wrap .section_banner_heading {
-        font-family: "Hind", sans-serif;
-        font-size: 1.8em;
-        color: #ffffff;
-        font-weight: bold; }
-      .section .section_banner .section_banner_text_wrap .section_banner_heading::selection {
-        background: #ff4e33; }
-      .section .section_banner .section_banner_text_wrap .section_banner_text {
-        margin-top: 20px;
-        font-family: "Fresca", sans-serif;
-        color: #d1d1d1;
-        font-size: 0.8em; }
-    .section .section_banner .section_banner_button {
-      margin: auto 0;
-      border-radius: 5px;
-      background-color: #e3ac00;
-      border: 1px solid #e3ac00;
-      color: #eef0ef;
-      font-size: 16px;
-      font-weight: bold;
-      padding: 15px 40px; }
+    background-color: #e3ac00;
+    border: 1px solid #e3ac00;
+    color: #eef0ef;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 15px 40px; }
 
 .footer {
   color: #d1d1d1;
@@ -166,12 +167,10 @@ body {
           font-size: small;
           font-weight: 100;
           text-align: center; }
+    .footer .footer-wrap .footer-cr, .footer .footer-wrap .footer_text {
+      font-family: "Fresca", sans-serif;
+      margin: auto;
+      font-size: small; }
     .footer .footer-wrap .footer_text {
-      font-family: "Fresca", sans-serif;
-      margin: auto;
       width: 15%;
-      font-size: small; }
-    .footer .footer-wrap .footer-cr {
-      font-family: "Fresca", sans-serif;
-      margin: auto;
-      font-size: small; }
+      text-align: justify; }
