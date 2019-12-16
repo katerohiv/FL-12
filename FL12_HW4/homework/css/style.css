@@ -75,6 +75,10 @@
         font-size: small;
         padding: 15px 20px;
         letter-spacing: 1px;
+        cursor: pointer;
+    }
+    .header_button:hover {
+        color: #bfba55;
     }
 
     .section {
@@ -128,13 +132,37 @@
         font-size: 15px;
         padding: 15px 20px;
         letter-spacing: 1px;
+        cursor: pointer;
 
     }
+    .section_button:hover {
+        color: #bfba55;}
 
     hr {
         color: #777;
     }
 
+    .footer {
+        background: #000;
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer_content {
+        padding: 50px 0;
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        margin: 0 200px;
+    }
+    .footer_header {
+        font-size: 2em;
+        margin: 10px 0;
+        font-weight: bold;
+        color: #ffffff;
+    }
+    .footer_text {
+        margin: 10px 0;
+        color: #777;
+    }
 }
-
-
