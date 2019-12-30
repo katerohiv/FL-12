@@ -26,19 +26,17 @@ if (userName === null || userName.length === emptyString) {
                 if (newPassword === null || newPassword.length === emptyString) {
                     alert(`Canceled`);
                 } else if (newPassword.length >= 6){
-                    let reNewPassword = prompt (`Please enter a new password again`);
+                    let reNewPassword = prompt(`Please enter a new password again`);
                     if ( reNewPassword === newPassword) {
-                        alert (`You have successfully changed your password.`)
-                    }
-                    else {
+                        alert(`You have successfully changed your password.`)
+                    } else {
                         alert(`You wrote the wrong password.`)
                     }
                 } else {
-                    alert (`It’s too short password. Sorry.`)
+                    alert(`It’s too short password. Sorry.`)
                 }
-            }
-            else {
-                alert (`Wrong password`)
+            } else {
+                alert(`Wrong password`)
             }
         }
     } else {
@@ -47,14 +45,4 @@ if (userName === null || userName.length === emptyString) {
 } else {
     alert(`I don’t know you`);
 }
-// let response = confirm(`Do you want to change your password?`);
-// if (response === false) {
-//     alert(`You have failed the change.`);
-// } else if (response === true) {
-//     let pass = prompt(`Please enter your old password`);
-//       if (pass.lenght === 0 || pass === null) {
-//         alert(`Canceled`);
-//       } else if (userEmail !== passUser || adminEmail !== passAdmin) {
-//         alert(`Wrong password`);
-//     }
-// }
+
